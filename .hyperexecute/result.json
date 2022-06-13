@@ -1,0 +1,85 @@
+{
+    "id": "a328930f-db3f-4c64-a47b-82ce35e168f6",
+    "created_at": "2022-06-13T13:39:46Z",
+    "update_at": "2022-06-13T13:42:03Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2022-06-13T13:39:51Z",
+    "end_time": "2022-06-13T13:42:03Z",
+    "summary": {
+        "total_time": 137000000000,
+        "execution_time": 132000000000,
+        "total_tasks": 1,
+        "build_time_consumed": 132000000000,
+        "jobTestExecutionTime": "1m33s",
+        "failed_tasks": 0,
+        "total_stage": 4,
+        "stage_pass_percent": 100,
+        "stage_failed_percent": 0,
+        "status": "completed"
+    },
+    "tasks": [
+        {
+            "id": "7239f11f-7a46-4257-bb1e-9b5aaec8c7a3",
+            "os": "mac",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2022-06-13T13:39:51Z",
+            "update_at": "2022-06-13T13:42:03Z",
+            "start_time": "2022-06-13T13:39:51Z",
+            "end_time": "2022-06-13T13:42:03Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "579a6fd6-1c1b-4b9d-a059-7e45260376a1",
+                    "type": "cache-download",
+                    "status": "completed",
+                    "name": "cache-download",
+                    "iteration": 0,
+                    "link": "cache-download.log",
+                    "created_at": "2022-06-13T13:39:51Z",
+                    "started_at": "2022-06-13T13:39:53Z",
+                    "updated_at": "2022-06-13T13:39:54Z",
+                    "order": 1
+                },
+                {
+                    "id": "2df225bd-c36c-4bf7-86e9-31f8d0237724",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2022-06-13T13:39:56Z",
+                    "started_at": "2022-06-13T13:39:57Z",
+                    "updated_at": "2022-06-13T13:40:09Z",
+                    "order": 2
+                },
+                {
+                    "id": "734bf7ed-a35e-4486-90d7-abaa0f6683c5",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2022-06-13T13:40:11Z",
+                    "started_at": "2022-06-13T13:40:12Z",
+                    "updated_at": "2022-06-13T13:40:13Z",
+                    "order": 3
+                },
+                {
+                    "id": "8458d6ed-bd55-4be0-bfa2-0984bbb329aa",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "tests/specs/demo.js",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2022-06-13T13:40:15Z",
+                    "started_at": "2022-06-13T13:40:19Z",
+                    "updated_at": "2022-06-13T13:42:01Z",
+                    "order": 4
+                }
+            ]
+        }
+    ]
+}

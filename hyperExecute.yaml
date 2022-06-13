@@ -2,10 +2,11 @@ version: 0.1
 globalTimeout: 90
 testSuiteTimeout: 90
 testSuiteStep: 90
-runson: win
+runson: mac
 autosplit: true
-concurrency: 2
+concurrency: 1
 tunnel: false
+debug: true
 pre:
   - npm install
 cacheKey: '{{ checksum "package-lock.json" }}'
