@@ -7,10 +7,10 @@ ports:
 tasks:
   - name: Get Core & Configure
     before: |
-      wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
+      wget https://stage-downloads.lambdatest.com/hyperexecute/linux/hyperexecute
       chmod u+x hyperexecute
       
     init: |
       echo "Performing test"
-      ./hyperexecute --user=$LT_USERNAME --key=$LT_ACCESS_KEY --config hyperExecute.yaml --download-artifacts --force-clean-artifacts
+      ./hyperexecute --user=$LT_USERNAME --key=$LT_ACCESS_KEY --config hyperExecute.yaml --download-artifacts --force-clean-artifacts --env stage
       echo "Test completion"
