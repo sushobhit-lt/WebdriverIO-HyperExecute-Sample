@@ -7,7 +7,7 @@ ports:
 tasks:
   - name: Get Core & Configure
     before: |
-      wget https://stage-downloads.lambdatest.com/hyperexecute/linux/hyperexecute
+      wget https://stage-downloads.lambdatestinternal.com/hyperexecute/linux/hyperexecute
       chmod u+x hyperexecute
       
     init: |

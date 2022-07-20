@@ -1,14 +1,17 @@
 
 describe('Demo Function', () => {
     it('Demo steps', async() => {
-    browser.url('https://www.lambdatest.com/automation-demos/')
-    for( var i=0; i<600; i++){
+    await browser.url('https://www.lambdatest.com/automation-demos/')
+    for( var i=0; i<1; i++){
         browser.getTitle()
         browser.getTitle()
     }
 
-    const result = await browser.execute("smartui.takeScreenshot");
+    const result = await browser.execute("smartui.takeScreenshot=demo");
     console.log(result)
+    await browser.url('https://www.lambdatest.com')
+    const result1 = await browser.execute("smartui.takeScreenshot=website");
+    console.log(result1)
     const username = $('#username')
     username.setValue('lambda')
     const password = $('#password')

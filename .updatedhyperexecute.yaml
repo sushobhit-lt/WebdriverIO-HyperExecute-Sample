@@ -3,7 +3,7 @@ user: sushobhitd
 key: glcUH6FSqT4uawyIL1RbXJr4ePasM1NuTZTkvxlQEz2IkSHLQt
 testSuites: []
 pre: [npm install]
-runson: mac
+runson: win
 autosplit: true
 concurrency: 1
 testDiscovery:
@@ -18,6 +18,5 @@ testSuiteStep: 90
 cacheDirectories:
 - .node_modules
 cacheKey: '{{ checksum "package-lock.json" }}'
-debug: true
-jobID: a328930f-db3f-4c64-a47b-82ce35e168f6
+jobID: 7bc66fa9-f6f2-4d10-b916-5e6534e00b12
 codeDirectory: WebdriverIO-HyperExecute-Sample

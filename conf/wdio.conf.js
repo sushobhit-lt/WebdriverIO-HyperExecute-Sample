@@ -27,7 +27,8 @@ exports.config = {
       visual: true,
       console: true,
       network: true,
-      "smartUI.project":"two",
+      "smartUI.project":"HE-project",
+      "smartUI.build":"visual-build-3",
       platformName: process.env.HYPEREXECUTE_PLATFORM || 'windows 10'  
     }
     }],
